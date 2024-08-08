@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptado-Desencriptado</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    
+        <div class="container">
+            <div class="encriptar">
+                <textarea 
+                name="texto" 
+                class="texto" 
+                id="texto" 
+                cols="30" 
+                rows="10" 
+                placeholder="ingrese el texto aqui"
+                ></textarea>
+
+                <div class="terminos">
+                    <p>solo letras minisculas y sin acento</p>
+                </div>
+                 <div class="botones">
+                     <button 
+                         class="btn-encriptar" 
+                         type="button" 
+                        onclick="encriptar()">
+                        encriptar
+                     </button>
+                     <button 
+                         class="btn-desencriptar" 
+                        type="button" 
+                        onclick="desencriptar()">
+                       desencriptar
+                    </button>
+            </div>
+            </div>
+                <div class="encriptado">
+                    <img src="img/muñeco.png" alt="" id="muñeco" />
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                  
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">
+                    Ingresa el texto que deseas encriptar o desencriptar
+                </p>
+            </div>
+        
+        </div> 
+
+    
+</body>
+    <script src="logica.js"></script>
+</html>
